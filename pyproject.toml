@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hateful-memes-clip"
+version = "0.1.0"
+description = ""
+authors = ["narinemarutyan <narine_m@purlin.com>"]
+readme = "README.md"
+packages = [{include = "hateful_memes_clip"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.3.0"
+pytorch-lightning = "^2.2.4"
+torchmetrics = "^1.3.2"
+transformers = "^4.40.1"
+pandas = "^2.2.2"
+scikit-learn = "^1.4.2"
+pillow = "^10.3.0"
+wandb = "^0.17.0"
+
+
+[tool.poetry.group.dev.dependencies]
+fairseq = "^0.12.2"
+torchvision = "^0.18.0"
+opencv-python = "^4.9.0.80"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
